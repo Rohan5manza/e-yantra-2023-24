@@ -1,0 +1,19 @@
+Team ID = GG_1857
+Trained weights drive link = "https://drive.google.com/file/d/1ZWttOudzIOkWBu1jxU2Laec--OhJHTBE/view?usp=drive_link"
+
+###############################################################################
+'''
+Please write the complete steps taken by your team explaining how you completed Task 2B. It is adviced to be as elaborate as possible.
+
+1. To begin with I referred to all resources listed, to learn about computer vision, CNNs, pytorch for CNN, and transfer learning.
+   I had to learn everything about how pretrained models are used, why weights are frozen, how CNN works, etc. Whole process of learning these new things took about 4-5 days.
+2. I started with learning more about how images are preprocessed, what's the best method to resize, crop, and perform useful operations on the images.
+3. I am accustomed with working on Google colab notebook for any ML project,so firstly I had to get accustomed to working on local machine using VSCode for this project, which was better in this case as local file paths for images were involved.
+4. I referred to all Pytorch documentation shared, for transfer learning and CNN, on how to load custom datasets and preprocess it and so on. With that as base I started with writing my own code. 
+5. As done in one Pytorch documentation for transfer learning, I started with using a pretrained model called EfficientNet_B0_weights and tried to write my code based on it, but its syntax was deprecated, so then I chose resnet18 as my final choice.
+6. There were no clear definite way given in any resources on how weights of pretrained model are frozen, while modifying the gradients of the fully connected custom layer we add for our own purposes, so I had to play around and try out different ways to do so. 
+   One tutorial by Andrej Karpathy I had done on backpropagation and gradients served to suggest me some additonal info on how I could disable gradients and so on, and finally I came up with the correct answer.
+7. Now my code was ready but e-yantra's evaluator files were throwing many errors when they ran my code, so I had to make additional modifications which took a lot of time and energy. Same thing had happened previously in task_1a as well, the evaluator files wanted the code in very specific constrained manner, and any deviation gave many errors even though code was correct.
+   In the final try the console, upon evaluation, printed some other warning messages, but my code ouput was visible, as a successful run, and the task_2B_output.txt file was generated,which meant my code was succesfully complete.
+8. Finally my code was correct now. Overall this time the task took me less time to complete,was comparatively easier, and it was a lot fun, I thourougly enjoyed it a lot. It was very beneficial for me as well, leveled up my skills and knowledge.
+
